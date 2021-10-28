@@ -1,0 +1,18 @@
+﻿<Properties>
+  <Array name="active" />
+  <ActiveConfiguration value="Debug" />
+  <ActivePlatform value="x86" />
+  <Array name="bookmarks" />
+  <Array name="files" />
+  <SerializedValue name="ModuleBrowserState">
+    <ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <string>b6bb8494-b567-4b95-b950-c9ea7506380d</string>
+      <string>e35bf447-c0ac-41d2-8b6e-bb1592ce5e7a</string>
+      <string>60513a05-eab7-41e7-8c10-e51c735edc2e</string>
+      <string>{C81DDC84-819D-4946-80D9-B14E4B2A26AD}</string>
+      <string>a9272292-3b23-462e-86cf-698fba7beb38</string>
+    </ArrayOfString>
+  </SerializedValue>
+  <ProjectBrowserState value="[Solution RxSampleParameter[RxSampleParameter[]]]&#xD;&#xA;Solution RxSampleParameter\RxSampleParameter\Recording modules&#xD;&#xA;Solution RxSampleParameter" />
+  <StartupProject value="{C81DDC84-819D-4946-80D9-B14E4B2A26AD}" />
+</Properties>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="fff0974d-f4d7-4f8d-a297-c1408ba53bb7"
+mode="Desktop"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="RxSampleParameter.Recording_modules.General">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="0ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="c200ccf3-b75f-4fe8-8fe6-18ec273f2be5">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b5117565-9dfa-49ef-b1ba-11bf744f9e7e"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@processname='RxDemoApp']
+				</path>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="ea9a1b3c-51fa-4237-b78b-ed45bd770f88"
+	name="RxSampleParameterRepository"
+	relativepath="..\..\RxSampleParameterRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="RxSampleParameterRepository"
+		namespace="RxSampleParameter">
+		</codegen>
+		<rootfolder
+		id="3c22921b-dd59-4ba6-ab73-142b0267cf40"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

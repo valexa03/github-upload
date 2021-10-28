@@ -1,0 +1,17 @@
+﻿<Properties>
+  <Array name="active">
+    <Element value="Recording modules\General\WriteMaxCounterToReport.rxrec" />
+  </Array>
+  <Array name="bookmarks" />
+  <Array name="files">
+    <Element value="RxSampleParameter.rxtst" />
+    <Element value="Recording modules\General\StartAUT.rxrec" />
+    <Element value="Recording modules\General\WriteMaxCounterToReport.rxrec" />
+  </Array>
+  <Properties name="projectSavedData">
+    <Properties name="customTool">
+      <runOnBuild value="False" />
+    </Properties>
+    <Array name="recentusercodeselections" />
+  </Properties>
+</Properties>

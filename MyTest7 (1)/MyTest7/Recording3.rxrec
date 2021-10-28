@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="36f19de7-b550-44fe-9175-ca56dc642cc9"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Recording3"
+	namespace="MyTest7">
+	</codegen>
+	<variables>
+		<var
+		id="fa40f79a-1254-4a7d-b16c-54ef958a8f66"
+		name="testParamVar">
+		</var>
+	</variables>
+	<recorditems>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="8e98d65c-8b1c-40fa-9c11-db032790cd75">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Message"
+				variable="testParamVar">
+				</binding>
+			</bindings>
+		</loggingrecorditem>
+	</recorditems>
+	<repository
+	id="8470b443-fd14-424f-bbf8-95f9570f500c"
+	name="MyTest7Repository"
+	relativepath="MyTest7Repository.rxrep">
+		<codegen
+		classname="MyTest7Repository"
+		namespace="MyTest7">
+		</codegen>
+		<rootfolder
+		id="e23bd683-5026-4dc2-859f-7a022d8cdd9b"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Recording3.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="0afc9c19-a677-4a08-99f7-e5a8de72e70c"
+mode="Desktop"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="InsertAge"
+	namespace="RxSampleParameter.Recording_modules.Database">
+	</codegen>
+	<variables>
+		<var
+		id="c07f74ea-b763-4a97-ac8e-25eaa0d3efd4"
+		name="varAge">
+			48
+		</var>
+	</variables>
+	<recorditems>
+		<setvaluerecorditem
+		attrname="Text"
+		enabled="True"
+		optional="False"
+		searchpropertyid="463f048a-ad90-4cb2-948d-ec43050de4d2">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="AttributeValue"
+				variable="varAge">
+				</binding>
+			</bindings>
+			<info
+			id="888b637e-5f7c-412f-b242-861ad471471e"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@processname='RxDemoApp']/?/?/tabpage[@controlname='RxTabStandard']/?/?/text[@controlname='upDownEdit']
+				</path>
+			</info>
+			<AttributeValue>
+				48
+			</AttributeValue>
+		</setvaluerecorditem>
+	</recorditems>
+	<repository
+	id="ea9a1b3c-51fa-4237-b78b-ed45bd770f88"
+	name="RxSampleParameterRepository"
+	relativepath="..\..\RxSampleParameterRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="RxSampleParameterRepository"
+		namespace="RxSampleParameter">
+		</codegen>
+		<rootfolder
+		id="3c22921b-dd59-4ba6-ab73-142b0267cf40"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		InsertAge.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

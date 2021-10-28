@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{C81DDC84-819D-4946-80D9-B14E4B2A26AD}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>RxSampleParameter</RootNamespace>
+    <AssemblyName>RxSampleParameter</AssemblyName>
+    <NoWarn>1591</NoWarn>
+    <RanorexVersion>9.0</RanorexVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>8fc0a670-cd07-4db9-855b-2fd5211f9719</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>22d7461d-3a4c-4566-9111-db7529ba8723</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>9d6eabb0-1710-4b99-9305-f22fdb75b4e4</id>
+    </Compile>
+    <Compile Include="Recording modules\Database\BtnAddEntry.cs">
+      <DependentUpon>BtnAddEntry.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4aa69af5-30e0-4d2d-b447-8b204d344d20</id>
+      <BoundTo>14569409-6753-4c6e-8048-697424c2e375</BoundTo>
+    </Compile>
+    <Compile Include="Recording modules\Database\BtnAddEntry.UserCode.cs">
+      <DependentUpon>BtnAddEntry.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f8ec2413-ebdc-4aea-be1a-de94141b285c</id>
+      <BoundTo>14569409-6753-4c6e-8048-697424c2e375</BoundTo>
+    </Compile>
+    <Compile Include="Recording modules\Database\BtnDeleteEntry.cs">
+      <DependentUpon>BtnDeleteEntry.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>cb8d8012-6a03-46bb-b33d-2759f0522c24</id>
+      <BoundTo>8dd3cb3e-939b-40e7-9327-bf3009a7b4a0</BoundTo>
+    </Compile>
+    <Compile Include="Recording modules\Database\BtnDeleteEntry.UserCode.cs">
+      <DependentUpon>BtnDeleteEntry.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b0ee13af-6db8-43fc-bfaf-994c818dfad5</id>
+      <BoundTo>8dd3cb3e-939b-40e7-9327-bf3009a7b4a0</BoundTo>
+    </Compile>
+    <Compile Include="Recording modules\Database\GetDBCounter.cs">
+      <DependentUpon>GetDBCounter.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1b205ace-c20b-4c65-a396-69dfb3140756</id>
+      <BoundTo>20c331f0-585e-45ed-a0b2-e851754be176</BoundTo>
+    </Compile>
+    <Compile Include="Recording modules\Database\GetDBCounter.UserCode.cs">
+      <DependentUpon>GetDBCounter.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>619ba40e-271e-4fb8-9e38-112d514533d7</id>
+      <BoundTo>20c331f0-585e-45ed-a0b2-e851754be176</BoundTo>
+    </Compile>
+    <Compile Include="Recording modules\Database\InsertAge.cs">
+      <DependentUpon>InsertAge.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>19ccf8c1-910f-4449-86d6-ec80acedc88b</id>
+      <BoundTo>980f97f1-23cf-47f6-91ae-e53712e5c984</BoundTo>
+    </Compile>
+    <Compile Include="Recording modules\Database\InsertAge.UserCode.cs">
+      <DependentUpon>InsertAge.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fb4a8ced-d99c-4883-92bb-3fe4dafb87ac</id>
+      <BoundTo>980f97f1-23cf-47f6-91ae-e53712e5c984</BoundTo>
+    </Compile>
+    <Compile Include="Recording modules\Database\InsertFirstName.cs">
+      <DependentUpon>InsertFirstName.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d530d58c-02c4-4e74-b853-9268413561d4</id>
+      <BoundTo>318f7c3f-e8ff-4552-9322-d546b0db27eb</BoundTo>
+    </Compile>
+    <Compile Include="Recording modules\Database\InsertFirstName.UserCode.cs">
+      <DependentUpon>InsertFirstName.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>33f45aec-01d8-4d39-8370-bbee1c77a3e8</id>
+      <BoundTo>318f7c3f-e8ff-4552-9322-d546b0db27eb</BoundTo>
+    </Compile>
+    <Compile Include="Recording modules\Database\InsertLastName.cs">
+      <DependentUpon>InsertLastName.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1197f1fe-2a91-4cb4-8175-f4ede610b332</id>
+      <BoundTo>ccb77e71-ff1b-47fd-9e54-fbbf0daf62b5</BoundTo>
+    </Compile>
+    <Compile Include="Recording modules\Database\InsertLastName.UserCode.cs">
+      <DependentUpon>InsertLastName.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>de2bf975-7451-4633-9d11-c7933ef2120a</id>
+      <BoundTo>ccb77e71-ff1b-47fd-9e54-fbbf0daf62b5</BoundTo>
+    </Compile>
+    <Compile Include="Recording modules\Database\SelectDepartment.cs">
+      <DependentUpon>SelectDepartment.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d383ebac-6374-4537-9a71-f9231decd22b</id>
+      <BoundTo>db80df91-cdea-45d5-a398-26f0ae0450a0</BoundTo>
+    </Compile>
+    <Compile Include="Recording modules\Database\SelectDepartment.UserCode.cs">
+      <DependentUpon>SelectDepartment.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cedccbc4-c261-4507-9878-efad71fb0cbd</id>
+      <BoundTo>db80df91-cdea-45d5-a398-26f0ae0450a0</BoundTo>
+    </Compile>
+    <Compile Include="Recording modules\Database\SelectFirstEntry.cs">
+      <DependentUpon>SelectFirstEntry.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f10c359b-a453-4f0a-b736-bb4dcb70ebfe</id>
+      <BoundTo>8607203f-30b9-44ad-bf47-0880e4d1592d</BoundTo>
+    </Compile>
+    <Compile Include="Recording modules\Database\SelectFirstEntry.UserCode.cs">
+      <DependentUpon>SelectFirstEntry.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1ac04160-7d9f-48bf-8495-705373e2703d</id>
+      <BoundTo>8607203f-30b9-44ad-bf47-0880e4d1592d</BoundTo>
+    </Compile>
+    <Compile Include="Recording modules\Database\SelectGender.cs">
+      <DependentUpon>SelectGender.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d4c8886c-a72b-4191-93de-58016347edbc</id>
+      <BoundTo>0a01b2cd-60f3-4c0d-a2b1-6236f6c67144</BoundTo>
+    </Compile>
+    <Compile Include="Recording modules\Database\SelectGender.UserCode.cs">
+      <DependentUpon>SelectGender.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5eb9cce9-5154-48d7-a29c-455a01cffa1a</id>
+      <BoundTo>0a01b2cd-60f3-4c0d-a2b1-6236f6c67144</BoundTo>
+    </Compile>
+    <Compile Include="Recording modules\General\CloseAUT.cs">
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>eeb2218c-1046-45c5-8089-c328336ea0eb</id>
+      <BoundTo>5de2907f-7b05-454b-bc0b-126391164c25</BoundTo>
+    </Compile>
+    <Compile Include="Recording modules\General\CloseAUT.UserCode.cs">
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cd03c4d2-c0f6-4c99-b0fd-b4a755b9db08</id>
+      <BoundTo>5de2907f-7b05-454b-bc0b-126391164c25</BoundTo>
+    </Compile>
+    <Compile Include="Recording modules\General\Delay2s.cs">
+      <DependentUpon>Delay2s.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>664fa8d7-6e27-4d45-8523-702585047362</id>
+      <BoundTo>f619ab50-5978-44ea-996f-e3d4d5355100</BoundTo>
+    </Compile>
+    <Compile Include="Recording modules\General\Delay2s.UserCode.cs">
+      <DependentUpon>Delay2s.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b2a187e0-52fe-4c76-9d57-1789fcc3a4bc</id>
+      <BoundTo>f619ab50-5978-44ea-996f-e3d4d5355100</BoundTo>
+    </Compile>
+    <Compile Include="Recording modules\General\SelectDatabase.cs">
+      <DependentUpon>SelectDatabase.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5a3610fb-76a6-42e2-93c5-8d80c500f077</id>
+      <BoundTo>81dc5ec9-ffaf-4d2c-9bd6-f7745adf95f8</BoundTo>
+    </Compile>
+    <Compile Include="Recording modules\General\SelectDatabase.UserCode.cs">
+      <DependentUpon>SelectDatabase.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d9c7483e-88da-43ac-8ad6-c062587f2ce6</id>
+      <BoundTo>81dc5ec9-ffaf-4d2c-9bd6-f7745adf95f8</BoundTo>
+    </Compile>
+    <Compile Include="Recording modules\General\StartAUT.cs">
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4f13735f-b652-4f09-9452-729392bdd699</id>
+      <BoundTo>fa76ba35-af3d-45c6-a583-e2dcd4c71834</BoundTo>
+    </Compile>
+    <Compile Include="Recording modules\General\StartAUT.UserCode.cs">
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>23ea2529-1fb8-47a9-9be2-e059d668ee22</id>
+      <BoundTo>fa76ba35-af3d-45c6-a583-e2dcd4c71834</BoundTo>
+    </Compile>
+    <Compile Include="Recording modules\General\WriteMaxCounterToReport.cs">
+      <DependentUpon>WriteMaxCounterToReport.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8f1f3633-70ea-4567-ba48-ce3d63a8023c</id>
+      <BoundTo>27dc5674-1c94-46c0-8b26-450204cf8d87</BoundTo>
+    </Compile>
+    <Compile Include="Recording modules\General\WriteMaxCounterToReport.UserCode.cs">
+      <DependentUpon>WriteMaxCounterToReport.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1945ffec-f741-42c7-a3fd-fb64f701d994</id>
+      <BoundTo>27dc5674-1c94-46c0-8b26-450204cf8d87</BoundTo>
+    </Compile>
+    <Compile Include="RxSampleParameterRepository.cs">
+      <BoundTo>8fc0a670-cd07-4db9-855b-2fd5211f9719</BoundTo>
+      <DependentUpon>RxSampleParameterRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>790ecaf9-8d9d-426b-881a-5627632c0a54</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>fa5d89e9-ee88-46ac-8ecd-95dcbc917a70</id>
+    </None>
+    <None Include="Recording modules\Database\BtnAddEntry.rxrec">
+      <BoundTo>8fc0a670-cd07-4db9-855b-2fd5211f9719</BoundTo>
+      <id>14569409-6753-4c6e-8048-697424c2e375</id>
+      <recordtableid>3482b557-4ff1-47f8-a0a1-f7cae8a08622</recordtableid>
+    </None>
+    <None Include="Recording modules\Database\BtnDeleteEntry.rxrec">
+      <BoundTo>8fc0a670-cd07-4db9-855b-2fd5211f9719</BoundTo>
+      <id>8dd3cb3e-939b-40e7-9327-bf3009a7b4a0</id>
+      <recordtableid>0df8f3ce-c5c2-4031-a77b-e193a37f0745</recordtableid>
+    </None>
+    <None Include="Recording modules\Database\GetDBCounter.rxrec">
+      <BoundTo>8fc0a670-cd07-4db9-855b-2fd5211f9719</BoundTo>
+      <id>20c331f0-585e-45ed-a0b2-e851754be176</id>
+      <recordtableid>18993657-b58e-468c-8b73-587192e90469</recordtableid>
+    </None>
+    <None Include="Recording modules\Database\InsertAge.rxrec">
+      <BoundTo>8fc0a670-cd07-4db9-855b-2fd5211f9719</BoundTo>
+      <id>980f97f1-23cf-47f6-91ae-e53712e5c984</id>
+      <recordtableid>0afc9c19-a677-4a08-99f7-e5a8de72e70c</recordtableid>
+    </None>
+    <None Include="Recording modules\Database\InsertFirstName.rxrec">
+      <BoundTo>8fc0a670-cd07-4db9-855b-2fd5211f9719</BoundTo>
+      <id>318f7c3f-e8ff-4552-9322-d546b0db27eb</id>
+      <recordtableid>af17c2bd-631c-47c0-8292-c6bcd11d8795</recordtableid>
+    </None>
+    <None Include="Recording modules\Database\InsertLastName.rxrec">
+      <BoundTo>8fc0a670-cd07-4db9-855b-2fd5211f9719</BoundTo>
+      <id>ccb77e71-ff1b-47fd-9e54-fbbf0daf62b5</id>
+      <recordtableid>35bd85fd-fb5e-4244-afad-fc536942fdd4</recordtableid>
+    </None>
+    <None Include="Recording modules\Database\SelectDepartment.rxrec">
+      <BoundTo>8fc0a670-cd07-4db9-855b-2fd5211f9719</BoundTo>
+      <id>db80df91-cdea-45d5-a398-26f0ae0450a0</id>
+      <recordtableid>4eecf895-475c-4594-85aa-3beb655fee3c</recordtableid>
+    </None>
+    <None Include="Recording modules\Database\SelectFirstEntry.rxrec">
+      <BoundTo>8fc0a670-cd07-4db9-855b-2fd5211f9719</BoundTo>
+      <id>8607203f-30b9-44ad-bf47-0880e4d1592d</id>
+      <recordtableid>68484fb7-f892-44f4-96ef-e42e36e51a09</recordtableid>
+    </None>
+    <None Include="Recording modules\Database\SelectGender.rxrec">
+      <BoundTo>8fc0a670-cd07-4db9-855b-2fd5211f9719</BoundTo>
+      <id>0a01b2cd-60f3-4c0d-a2b1-6236f6c67144</id>
+      <recordtableid>e69fe376-7423-43a1-9f46-f9a03375b285</recordtableid>
+    </None>
+    <None Include="Recording modules\General\CloseAUT.rxrec">
+      <BoundTo>8fc0a670-cd07-4db9-855b-2fd5211f9719</BoundTo>
+      <id>5de2907f-7b05-454b-bc0b-126391164c25</id>
+      <recordtableid>fff0974d-f4d7-4f8d-a297-c1408ba53bb7</recordtableid>
+    </None>
+    <None Include="Recording modules\General\Delay2s.rxrec">
+      <BoundTo>8fc0a670-cd07-4db9-855b-2fd5211f9719</BoundTo>
+      <id>f619ab50-5978-44ea-996f-e3d4d5355100</id>
+      <recordtableid>7b1f9e3c-99ec-4d49-b1c4-cb273076aa4e</recordtableid>
+    </None>
+    <None Include="Recording modules\General\SelectDatabase.rxrec">
+      <BoundTo>8fc0a670-cd07-4db9-855b-2fd5211f9719</BoundTo>
+      <id>81dc5ec9-ffaf-4d2c-9bd6-f7745adf95f8</id>
+      <recordtableid>f8d04efa-2911-422d-84b2-6b149b8a8119</recordtableid>
+    </None>
+    <None Include="Recording modules\General\StartAUT.rxrec">
+      <BoundTo>8fc0a670-cd07-4db9-855b-2fd5211f9719</BoundTo>
+      <id>fa76ba35-af3d-45c6-a583-e2dcd4c71834</id>
+      <recordtableid>25d9875f-5378-4b1b-be02-72dcc1cff701</recordtableid>
+    </None>
+    <None Include="Recording modules\General\WriteMaxCounterToReport.rxrec">
+      <BoundTo>8fc0a670-cd07-4db9-855b-2fd5211f9719</BoundTo>
+      <id>27dc5674-1c94-46c0-8b26-450204cf8d87</id>
+      <recordtableid>696be6e6-a9fb-4e80-a873-154ece4b891b</recordtableid>
+    </None>
+    <None Include="RxDemoApp.exe">
+      <id>813bb87b-06cd-446e-8d2d-3a0ad8ef455d</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RxSampleParameterRepository.rximg">
+      <BoundTo>8fc0a670-cd07-4db9-855b-2fd5211f9719</BoundTo>
+      <DependentUpon>RxSampleParameterRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>ad852ea0-0be5-4fed-a551-5359d35ec02c</id>
+    </None>
+    <None Include="RxSampleParameterRepository.rxrep">
+      <id>8fc0a670-cd07-4db9-855b-2fd5211f9719</id>
+      <repoid>ea9a1b3c-51fa-4237-b78b-ed45bd770f88</repoid>
+      <reporootid>3c22921b-dd59-4ba6-ab73-142b0267cf40</reporootid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="RxSampleParameter.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>4d1fe86f-8a03-4026-8147-611141c0072b</id>
+    </Content>
+    <Content Include="RxSampleParameter.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>8f412aad-193a-4842-bf1b-55ce751c23ef</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Recording modules">
+      <id>e35bf447-c0ac-41d2-8b6e-bb1592ce5e7a</id>
+    </Folder>
+    <Folder Include="Recording modules\General">
+      <id>b6bb8494-b567-4b95-b950-c9ea7506380d</id>
+    </Folder>
+    <Folder Include="Recording modules\Database">
+      <id>a9272292-3b23-462e-86cf-698fba7beb38</id>
+    </Folder>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

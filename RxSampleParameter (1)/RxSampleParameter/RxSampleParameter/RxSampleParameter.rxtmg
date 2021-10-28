@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc
+rxversion="9.0">
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="RxSampleParameter"
+      id="df16a619-beb9-40cf-92bf-7a1632e24b48"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="RxSampleParameter"
+      id="df16a619-beb9-40cf-92bf-7a1632e24b48"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>
